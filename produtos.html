@@ -1,126 +1,245 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Meus Produtos</title>
-    
-  </head>
-  <body class="bg-light">
-    <header class="p-3 mb-3 border-bottom">
-      <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-  
-          <ul class="nav col-12 col-lg-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="index.html" class="nav-link px-2 link-dark">Roupas de Inverno</a></li>
-            <li><a href="verao.html" class="nav-link px-2 link-dark">Roupas de Verão</a></li>
-            <li><a href="calcados.html" class="nav-link px-2 link-dark">Calçados</a></li>
-            <li><a href="diversos.html" class="nav-link px-2 link-dark">Diversos</a></li>
-           </ul>
-          
-          <img class="mx-auto"src="logo.png"  height="70px"alt="logo">
-  
-          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-            <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-          </form>
-  
-          <div class="dropdown text-end">
-            <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
-            </a>
-            <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
-              <li><a class="dropdown-item" href="perfil.html">Meu perfil</a></li>
-              <li><a class="dropdown-item" href="produtos.html">Meus produtos</a></li>
-              <li><a class="dropdown-item" href="cadastrar.html">Novo produto</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Logout</a></li>
-            </ul>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <title>Meus Produtos</title>
+
+</head>
+
+<body class="bg-light">
+  <header class="p-3 mb-3 border-bottom">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+        <ul class="nav col-12 col-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="index.html" class="nav-link px-2 link-dark">Roupas de Inverno</a></li>
+          <li><a href="verao.html" class="nav-link px-2 link-dark">Roupas de Verão</a></li>
+          <li><a href="calcados.html" class="nav-link px-2 link-dark">Calçados</a></li>
+          <li><a href="diversos.html" class="nav-link px-2 link-dark">Diversos</a></li>
+        </ul>
+
+        <img class="mx-auto" src="Imagens/logo.png" height="70px" alt="logo">
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        </form>
+
+        <div class="dropdown text-end">
+          <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+          </a>
+          <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+            <li><a class="dropdown-item" href="perfil.html">Meu perfil</a></li>
+            <li><a class="dropdown-item" href="produtos.html">Meus produtos</a></li>
+            <li><a class="dropdown-item" href="cadastrar.html">Novo produto</a></li>
+            <li><a class="dropdown-item" href="carrinho.html">Visualizar Carrinho</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="row m-3">
+      <div class="col">
+        <h1>Meus produtos</h1>
+      </div>
+    </div>
+    <!--Começa-->
+    <div class="row">
+      <div class="col">
+        Nome:<span></span>
+      </div>
+      <div class="col-2 mb-2 d-flex justify-content-end">
+        <button type="button" class="btn btn-dark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+            width="16" height="16">
+            <path fill="rgb(255,255,255)" fill-rule="evenodd"
+              d="M11.013 1.427a1.75 1.75 0 012.474 0l1.086 1.086a1.75 1.75 0 010 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 01-.927-.928l.929-3.25a1.75 1.75 0 01.445-.758l8.61-8.61zm1.414 1.06a.25.25 0 00-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 000-.354l-1.086-1.086zM11.189 6.25L9.75 4.81l-6.286 6.287a.25.25 0 00-.064.108l-.558 1.953 1.953-.558a.249.249 0 00.108-.064l6.286-6.286z">
+            </path>
+          </svg></button>
+      </div>
+      <hr />
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card m-3" style="width: 18rem;">
+          <img src="Imagens/moletom.jpg" class="card-img-top" alt="...">
+        </div>
+
+      </div>
+      <div class="col-md-8">
+        <div class="row mt-3">
+          <div class="col-10">
+            Preço:<span></span>
+          </div>
+          <div class="col-2 mb-2 d-flex justify-content-end">
+            <button type="button" class="btn btn-dark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                width="16" height="16">
+                <path fill="rgb(255,255,255)" fill-rule="evenodd"
+                  d="M11.013 1.427a1.75 1.75 0 012.474 0l1.086 1.086a1.75 1.75 0 010 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 01-.927-.928l.929-3.25a1.75 1.75 0 01.445-.758l8.61-8.61zm1.414 1.06a.25.25 0 00-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 000-.354l-1.086-1.086zM11.189 6.25L9.75 4.81l-6.286 6.287a.25.25 0 00-.064.108l-.558 1.953 1.953-.558a.249.249 0 00.108-.064l6.286-6.286z">
+                </path>
+              </svg></button>
+          </div>
+          <hr />
+        </div>
+        <div class="row mt-3">
+          <div class="col-10">
+            Descrição:<span></span>
+          </div>
+          <div class="col-2 mb-2 d-flex justify-content-end">
+            <button type="button" class="btn btn-dark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                width="16" height="16">
+                <path fill="rgb(255,255,255)" fill-rule="evenodd"
+                  d="M11.013 1.427a1.75 1.75 0 012.474 0l1.086 1.086a1.75 1.75 0 010 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 01-.927-.928l.929-3.25a1.75 1.75 0 01.445-.758l8.61-8.61zm1.414 1.06a.25.25 0 00-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 000-.354l-1.086-1.086zM11.189 6.25L9.75 4.81l-6.286 6.287a.25.25 0 00-.064.108l-.558 1.953 1.953-.558a.249.249 0 00.108-.064l6.286-6.286z">
+                </path>
+              </svg></button>
+          </div>
+          <hr />
+        </div>
+        <div class="row mt-3">
+          <div class="col mt-3">Tamanho:</div>
+          <div class="col">
+            <div class="row mt-3">
+              <div class="col-10">
+                Estoque:<span></span>
+              </div>
+              <div class="col-2 mb-2 d-flex justify-content-end">
+                <button type="button" class="btn btn-dark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                    width="16" height="16">
+                    <path fill="rgb(255,255,255)" fill-rule="evenodd"
+                      d="M11.013 1.427a1.75 1.75 0 012.474 0l1.086 1.086a1.75 1.75 0 010 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 01-.927-.928l.929-3.25a1.75 1.75 0 01.445-.758l8.61-8.61zm1.414 1.06a.25.25 0 00-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 000-.354l-1.086-1.086zM11.189 6.25L9.75 4.81l-6.286 6.287a.25.25 0 00-.064.108l-.558 1.953 1.953-.558a.249.249 0 00.108-.064l6.286-6.286z">
+                    </path>
+                  </svg></button>
+              </div>
+            </div>
+          </div>
+          <hr />
+        </div>
+        <div class="row mt-3">
+          <div class="col-6 fw-light">
+            Vendidos:<span></span>
+            <hr />
+          </div>
+          <div class="col-6 mb-2 fw-light">
+            Faturamento:<span></span>
+            <hr />
           </div>
         </div>
       </div>
-    </header>
-      <div class="container">
-        <div class="row m-3">
-          <h1>Meus produtos</h1>
-        </div>
-        <div class="row">
-          <div class="row mt-3 p-0">
-            <div class="col-10">
-              Nome:<span></span>
-            </div>
-            <div class="col-2 mb-2 d-flex justify-content-end">
-              <button  type="button" class="btn btn-dark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill="rgb(255,255,255)" fill-rule="evenodd" d="M11.013 1.427a1.75 1.75 0 012.474 0l1.086 1.086a1.75 1.75 0 010 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 01-.927-.928l.929-3.25a1.75 1.75 0 01.445-.758l8.61-8.61zm1.414 1.06a.25.25 0 00-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 000-.354l-1.086-1.086zM11.189 6.25L9.75 4.81l-6.286 6.287a.25.25 0 00-.064.108l-.558 1.953 1.953-.558a.249.249 0 00.108-.064l6.286-6.286z"></path></svg></button>  
-            </div>
-          <hr/>
-            </div>
-            <div class="col-md-4">
-                <div class="card m-3" style="width: 18rem;">
-                    <img src="moletom.jpg" class="card-img-top" alt="...">
-                </div>
+    </div>
+    <!-- Termina-->
 
-            </div>
-            <div class="col-md-8">
-                <div class="row mt-3">
-                  <div class="col-10">
-                    Preço:<span></span>
-                  </div>
-                  <div class="col-2 mb-2 d-flex justify-content-end">
-                    <button  type="button" class="btn btn-dark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill="rgb(255,255,255)" fill-rule="evenodd" d="M11.013 1.427a1.75 1.75 0 012.474 0l1.086 1.086a1.75 1.75 0 010 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 01-.927-.928l.929-3.25a1.75 1.75 0 01.445-.758l8.61-8.61zm1.414 1.06a.25.25 0 00-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 000-.354l-1.086-1.086zM11.189 6.25L9.75 4.81l-6.286 6.287a.25.25 0 00-.064.108l-.558 1.953 1.953-.558a.249.249 0 00.108-.064l6.286-6.286z"></path></svg></button>  
-                  </div>
-                  <hr/>
-                </div>
-                  <div class="row mt-3">
-                    <div class="col-10">
-                      Descrição:<span></span>
-                    </div>
-                    <div class="col-2 mb-2 d-flex justify-content-end">
-                      <button  type="button" class="btn btn-dark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill="rgb(255,255,255)" fill-rule="evenodd" d="M11.013 1.427a1.75 1.75 0 012.474 0l1.086 1.086a1.75 1.75 0 010 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 01-.927-.928l.929-3.25a1.75 1.75 0 01.445-.758l8.61-8.61zm1.414 1.06a.25.25 0 00-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 000-.354l-1.086-1.086zM11.189 6.25L9.75 4.81l-6.286 6.287a.25.25 0 00-.064.108l-.558 1.953 1.953-.558a.249.249 0 00.108-.064l6.286-6.286z"></path></svg></button>  
-                    </div>
-                    <hr/>
-                  </div>
-                <div class="row mt-3">
-                  <div class="col mt-3">Tamanho:</div>
-                  <div class="col">
-                    <div class="row mt-3">
-                    <div class="col-10">
-                      Estoque:<span></span>
-                    </div>
-                    <div class="col-2 mb-2 d-flex justify-content-end">
-                      <button  type="button" class="btn btn-dark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill="rgb(255,255,255)" fill-rule="evenodd" d="M11.013 1.427a1.75 1.75 0 012.474 0l1.086 1.086a1.75 1.75 0 010 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 01-.927-.928l.929-3.25a1.75 1.75 0 01.445-.758l8.61-8.61zm1.414 1.06a.25.25 0 00-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 000-.354l-1.086-1.086zM11.189 6.25L9.75 4.81l-6.286 6.287a.25.25 0 00-.064.108l-.558 1.953 1.953-.558a.249.249 0 00.108-.064l6.286-6.286z"></path></svg></button>  
-                    </div>
-                    </div>
-                  </div>
-                  <hr/>
-                </div>
-                <div class="row mt-3">
-                  <div class="col-6">
-                    Vendidos:<span></span>
-                    <hr/>
-                  </div>
-                  <div class="col-6 mb-2">
-                    Faturamento:<span></span>
-                    <hr/>
-                  </div>
-                </div>
 
-            </div>
-        </div>
+    <div class="row mt-5">
+      <div class="col">
+        Nome:<span></span>
       </div>
-    
-    <!-- Optional JavaScript; choose one of the two! -->
+      <div class="col-2 mb-2 d-flex justify-content-end">
+        <button type="button" class="btn btn-dark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+            width="16" height="16">
+            <path fill="rgb(255,255,255)" fill-rule="evenodd"
+              d="M11.013 1.427a1.75 1.75 0 012.474 0l1.086 1.086a1.75 1.75 0 010 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 01-.927-.928l.929-3.25a1.75 1.75 0 01.445-.758l8.61-8.61zm1.414 1.06a.25.25 0 00-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 000-.354l-1.086-1.086zM11.189 6.25L9.75 4.81l-6.286 6.287a.25.25 0 00-.064.108l-.558 1.953 1.953-.558a.249.249 0 00.108-.064l6.286-6.286z">
+            </path>
+          </svg></button>
+      </div>
+      <hr />
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card m-3" style="width: 18rem;">
+          <img src="Imagens/moletom.jpg" class="card-img-top" alt="...">
+        </div>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      </div>
+      <div class="col-md-8">
+        <div class="row mt-3">
+          <div class="col-10">
+            Preço:<span></span>
+          </div>
+          <div class="col-2 mb-2 d-flex justify-content-end">
+            <button type="button" class="btn btn-dark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                width="16" height="16">
+                <path fill="rgb(255,255,255)" fill-rule="evenodd"
+                  d="M11.013 1.427a1.75 1.75 0 012.474 0l1.086 1.086a1.75 1.75 0 010 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 01-.927-.928l.929-3.25a1.75 1.75 0 01.445-.758l8.61-8.61zm1.414 1.06a.25.25 0 00-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 000-.354l-1.086-1.086zM11.189 6.25L9.75 4.81l-6.286 6.287a.25.25 0 00-.064.108l-.558 1.953 1.953-.558a.249.249 0 00.108-.064l6.286-6.286z">
+                </path>
+              </svg></button>
+          </div>
+          <hr />
+        </div>
+        <div class="row mt-3">
+          <div class="col-10">
+            Descrição:<span></span>
+          </div>
+          <div class="col-2 mb-2 d-flex justify-content-end">
+            <button type="button" class="btn btn-dark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                width="16" height="16">
+                <path fill="rgb(255,255,255)" fill-rule="evenodd"
+                  d="M11.013 1.427a1.75 1.75 0 012.474 0l1.086 1.086a1.75 1.75 0 010 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 01-.927-.928l.929-3.25a1.75 1.75 0 01.445-.758l8.61-8.61zm1.414 1.06a.25.25 0 00-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 000-.354l-1.086-1.086zM11.189 6.25L9.75 4.81l-6.286 6.287a.25.25 0 00-.064.108l-.558 1.953 1.953-.558a.249.249 0 00.108-.064l6.286-6.286z">
+                </path>
+              </svg></button>
+          </div>
+          <hr />
+        </div>
+        <div class="row mt-3">
+          <div class="col mt-3">Tamanho:</div>
+          <div class="col">
+            <div class="row mt-3">
+              <div class="col-10">
+                Estoque:<span></span>
+              </div>
+              <div class="col-2 mb-2 d-flex justify-content-end">
+                <button type="button" class="btn btn-dark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                    width="16" height="16">
+                    <path fill="rgb(255,255,255)" fill-rule="evenodd"
+                      d="M11.013 1.427a1.75 1.75 0 012.474 0l1.086 1.086a1.75 1.75 0 010 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 01-.927-.928l.929-3.25a1.75 1.75 0 01.445-.758l8.61-8.61zm1.414 1.06a.25.25 0 00-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 000-.354l-1.086-1.086zM11.189 6.25L9.75 4.81l-6.286 6.287a.25.25 0 00-.064.108l-.558 1.953 1.953-.558a.249.249 0 00.108-.064l6.286-6.286z">
+                    </path>
+                  </svg></button>
+              </div>
+            </div>
+          </div>
+          <hr />
+        </div>
+        <div class="row mt-3">
+          <div class="col-6 fw-light">
+            Vendidos:<span></span>
+            <hr />
+          </div>
+          <div class="col-6  fw-light mb-2">
+            Faturamento:<span></span>
+            <hr />
+          </div>
+        </div>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
-  </body>
+</body>
+
 </html>
